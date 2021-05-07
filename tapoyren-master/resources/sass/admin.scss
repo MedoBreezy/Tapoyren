@@ -1,0 +1,277 @@
+//
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: darkgrey;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.admin-content {
+   display: flex;
+}
+
+.admin-sidebar {
+   position: fixed;
+   top: 64px;
+   left: 0;
+   height: 100vh;
+   background: #080808;
+   color: white;
+   width: 200px;
+   z-index: 999999;
+
+   ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+         color: white;
+         padding: 10px;
+         letter-spacing: 1px;
+         background: dodgerblue;
+
+         a {
+            color: white;
+         }
+
+         &.divider {
+            background: rgba(255,255,255,0.2);
+            width: 100%;
+            height: 2px;
+            // margin: 10px 0;
+            overflow: hidden;
+            padding: 0;
+         }
+
+      }
+
+   }
+
+}
+
+.admin-page {
+   position: relative;
+   left: 200px;
+   width: calc(100% - 200px);
+   padding: 40px;
+}
+
+.preview_video {
+   font-size: 18px;
+   border-bottom: 1px solid #d8d8d8;
+   padding: 5px;
+   opacity: 0.7;
+   font-weight: bold;
+   letter-spacing: 1px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   &.active {
+      color: #080808;
+      opacity: 1;
+      text-transform: uppercase;
+   }
+
+}
+
+.--rating .rating__item:hover {
+   opacity: 0.5;
+   cursor: pointer;
+}
+
+.course_sidebar {
+   background: white;
+   padding: 15px;
+   z-index: 99999999;
+   position: fixed;
+   top: 20vh;
+   right: -100%;
+   width: 300px;
+   height: 60vh;
+   transition: 0.4s ease all;
+   overflow-y: scroll;
+   border-radius: 4px;
+   box-shadow: 0 0 10px #d8d8d8;
+
+   > div:first-child {
+         padding-top: 40px;
+   }
+
+   &.active {
+      right: 0;
+   }
+
+   ul {
+      max-height: 0;
+      overflow: hidden;
+
+      &.active {
+         max-height: unset;
+      }
+
+   }
+
+   .course_sidebar__toggle {
+      cursor: pointer;
+      position: absolute;
+      top: -10px;
+      left: -10px;
+
+      i {
+         font-size: 30px;
+      }
+
+   }
+
+}
+
+.course_sidebar__toggle.floating {
+   cursor: pointer;
+   background: #fff;
+   color: #080808;
+   padding: 5px;
+   border-top-left-radius: 4px;
+   border-bottom-left-radius: 4px;
+   position: fixed;
+   top: 20vh;
+   right: 0;
+   z-index: 9999999;
+   box-shadow: 0 0 10px #d8d8d8;
+}
+
+
+.head-nav-link {
+   color: white !important;
+   margin: 0 15px;
+}
+
+@media all and (max-width: 768px) {
+   .hidden-sm {
+      display: none !important;
+   }
+}
+
+.hidden {
+   display: none;
+}
+
+.exam-answer {
+   background: white;
+   border-radius: 4px;
+   padding: 6px 10px;
+   border: 1px solid #eeeeee;
+   color: #080808;
+   margin: 4px 0;
+   display: flex;
+   align-items: center;
+   transition: 0.4s ease all;
+
+   &.correct-answer {
+      background: #73B508;
+   }
+
+   &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+   }
+
+   .checkbox {
+      background: #d8d8d8;
+      border-radius: 2px;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 15px;
+
+   }
+
+   .answer {
+      p {
+         margin: 0;
+      }
+   }
+
+}
+
+.swal2-cancel {
+   margin-left: 20px !important;
+}
+
+.result-question {
+   padding: 8px;
+   background: white;
+   border: 1px solid #eeeeee;
+   border-radius: 4px;
+   margin: 6px 0;
+
+   .head {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+
+      p {
+         margin: 0;
+      }
+
+      i {
+         font-size: 35px;
+         margin-right: 10px;
+         font-weight: bold;
+      }
+
+   }
+
+   .answers {
+      display: flex;
+      flex-direction: column;
+   }
+
+}
+
+.faq {
+   position: relative;
+   background: white;
+   padding: 10px 20px;
+   font-size: 18px;
+   border: 1px solid #d8d8d8;
+   border-radius: 4px;
+   margin-bottom: 20px;
+
+   .question {
+      max-width: 90%;
+   }
+
+   button {
+      position: absolute;
+      top: 7px;
+      right: 10px;
+      padding: 0px 4px !important;
+   }
+
+   button i {
+      font-size: 20px !important;
+   }
+   
+   .faq_description {
+      margin-top: 20px;
+      opacity: 0.8;
+   }
+}

@@ -1,0 +1,185 @@
+.hero_auth {
+   position: relative;
+   width: 100%;
+   height: calc(100vh - 100px);
+   background: url('../design/assets/hero_auth.png') #dddddd no-repeat center;
+   background-size: cover;
+}
+
+.hero_auth .text {
+   width: 600px;
+   position: absolute;
+   top: 15%;
+   left: 15%;
+   color: white;
+   text-align: center;
+}
+
+.hero_auth .text img {
+   width: 80px;
+   object-fit: contain;
+   margin-bottom: 8px;
+}
+
+.hero_auth .text .small {
+   font-size: 30px;
+}
+
+.hero_auth .text .heading {
+   margin: 5px 0;
+   font-size: 80px;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+.hero_auth .text .description {
+   font-size: 22px;
+}
+
+.hero_auth .auth {
+   width: 400px;
+   position: absolute;
+   top: 10%;
+   right: 15%;
+   background: white;
+   padding: 50px 40px;
+   border-radius: 8px;
+   box-shadow: 0 0 8px #878787;
+}
+
+.hero_auth .auth .tabs {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 20px;
+}
+
+.hero_auth .auth .tabs .tab {
+   border: 2px solid #0096ff;
+   color: #0096ff;
+   padding: 10px 30px;
+   transition: 0.3s ease all;
+   letter-spacing: 1px;
+   font-family: "DIN Pro Regular";
+}
+
+.hero_auth .auth .tabs .tab.active {
+   background: #0096ff;
+   color: white;
+}
+
+.hero_auth .auth .tabs .tab:hover {
+   cursor: pointer;
+   opacity: 0.8;
+}
+
+.hero_auth .auth .content {
+   display: none;
+}
+
+.hero_auth .auth .content.active {
+   display: block;
+}
+
+.hero_auth .auth .tabs .tab:first-child {
+   border-top-left-radius: 8px;
+   border-bottom-left-radius: 8px;
+}
+
+.hero_auth .auth .tabs .tab:last-child {
+   border-top-right-radius: 8px;
+   border-bottom-right-radius: 8px;
+}
+
+.hero_auth .auth .content {
+   margin-top: 35px;
+}
+
+.input {
+   position: relative;
+   border: 1px solid #d8d8d8;
+   padding: 2px;
+   border-radius: 8px;
+   margin: 20px 0;
+}
+
+.input input {
+   padding: 10px;
+   outline: none;
+   width: 100%;
+   border: 0;
+}
+
+.input .placeholder {
+   font-size: 14px;
+   color: #afb0c0;
+   position: absolute;
+   top: -50%;
+   left: 10px;
+   transform: translateY(50%);
+   background: white;
+   padding: 0 5px;
+}
+
+.hero_auth .auth .content .btm {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.hero_auth .auth .content button.blue {
+   width: 100%;
+   border-radius: 8px;
+   font-size: 16px;
+   letter-spacing: 1px;
+}
+
+.checkbox {
+   display: flex;
+   align-items: center;
+}
+
+.checkbox, .checkbox label {
+   cursor: pointer;
+}
+
+.checkbox label {
+   margin-left: 10px;
+}
+
+.checkbox .check {
+   width: 25px;
+   height: 25px;
+   background: #0096ff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 4px;
+}
+
+.checkbox .check i {
+   display: none;
+   font-size: 18px;
+   color: white;
+}
+
+.checkbox input {
+   display: none;
+}
+
+.checkbox input:checked ~ .check i {
+   display: inline-block;
+}
+
+.btm a.forgot {
+   color: #878787;
+}
+
+select {
+   border: 1px solid #d8d8d8;
+   border-radius: 8px;
+   width: 100%;
+   padding: 10px;
+   font-family: "DIN Pro Regular";
+   font-size: 14px;
+}

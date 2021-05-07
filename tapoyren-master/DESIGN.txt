@@ -1,0 +1,27 @@
+[DONE]
+Home
+About
+Terms & Conditions
+Contact
+Browse Courses
+Search
+Browse Category
+Course Page
+Course Lesson Page
+Course Enroll Page
+Course Preview Video Page
+Package Subscription Page
+My Courses
+Wishlist
+
+
+[UNFINISHED]
+Messages
+Exam
+
+[MISSING DESIGN]
+Package Page
+Question & Answers (Questions List, View Question, Post Question)
+FAQ
+Update Profile
+Forgot Password + Reset Password

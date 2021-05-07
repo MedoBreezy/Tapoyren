@@ -1,0 +1,108 @@
+main.package {
+   width: 80%;
+   margin: 40px auto;
+}
+
+main.package .head {
+   position: relative;
+   background: #0096ff;
+   padding: 20px;
+   height: 200px;
+   border-top-left-radius: 4px;
+   border-top-right-radius: 4px;
+}
+
+main.package .content {
+   position: relative;
+   background: white;
+   padding: 20px;
+   height: 150px;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   border-bottom-left-radius: 4px;
+   border-bottom-right-radius: 4px;
+}
+
+main.package .head .package_details {
+   position: absolute;
+   bottom: -55%;
+   left: 50%;
+   transform: translateX(-50%);
+   width: max-content;
+   padding: 10px;
+   border-radius: 8px;
+   background: white;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   z-index: 9999999;
+}
+
+main.package .head .package_details img {
+   width: 150px;
+   height: 150px;
+   object-fit: contain;
+   border-radius: 4px;
+}
+
+.package_about {
+   width: 80%;
+   margin: 20px auto;
+   background: white;
+   border-radius: 4px;
+   padding: 30px 20px;
+}
+
+.package_about h3.title {
+   margin: 0;
+   margin-bottom: 15px;
+}
+
+.package_courses {
+   width: 80%;
+   margin: 20px auto;
+   background: white;
+   border-radius: 4px;
+   padding: 30px 20px;
+}
+
+.package_courses h3.title {
+   margin: 0;
+   margin-bottom: 15px;
+}
+
+.package_courses .courses {
+   display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px,300px));
+	grid-gap: 25px;
+	margin-top: 40px;
+	justify-content: center;
+	padding-bottom: 40px;
+}
+
+.package_courses .course {
+	width: 100%;
+   box-shadow: 0 0 10px #d8d8d8;
+   border-radius: 4px;
+}
+
+.package_courses .course img.thumbnail {
+   width: 100%;
+   height: auto;
+   border-top-left-radius: 4px;
+   border-top-right-radius: 4px;
+	object-fit: contain;
+}
+
+.package_courses .course .details {
+	position: relative;
+	top: -2px;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.package_courses .course .details span {
+   font-family: "DIN Pro Bold";
+}

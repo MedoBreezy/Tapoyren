@@ -1,0 +1,30 @@
+[x] update course
+add resource for lecture
+add topic for exam question
+
+crop image
+top and bottom buttons (replacing drag and drop)
+editor -> insert image
+
+[x] exam
+[x] Q&A - 3
+[x] advanced search - 1
+[x] browse courses - 1
+[x] category page - 1
+[x] wishlist - 4
+[x] update profile - 2
+instructor dashboard - 3
+user dashboard - 1
+notifications - 1
+course start mail, end mail - 4
+email history - 1
+
+
+Tapoyren
+	⁃	Paketləri alarkən də terms and conditions qəbul etməli
+	⁃	Add Exam (cavab hissəsi yoxdur, errorlar verir)
+	⁃	Front enddə Responsivlik problemləri
+	⁃	İnstructor profil yoxdur onu düzəltmək (nə qədər gəliri var və s.)
+	⁃	Admin paneldə hesabat (trelloda)
+	⁃	FAQ səhifəsi (admindən suallar və onların cavabları əlavə etmə, cavablarda video embed də ola bilər)
+	⁃	Safaridə qeydiyyat edəndə 500 eroor çıxır
